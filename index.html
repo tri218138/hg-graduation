@@ -90,6 +90,13 @@
       width: 100%;
       border-radius: 8px;
     }
+    .video-container {
+      display: flex; /* Display side-by-side */
+      flex-direction: column; /* Change to "row" for side-by-side */
+      /* gap: 10px; */
+      align-items: center;
+      margin-top: 40px;
+    }
   </style>
 </head>
 <body>
@@ -108,15 +115,15 @@
       <img src="map-title.png" alt="Map Title">
       <img src="tdtu-map-4.gif" alt="Graduation Photo">
     </div>
-  </div>
-  <div class="video-container">
-    <iframe width="560" height="315" 
-      src="https://www.youtube.com/embed/B1bNryZB188?autoplay=1&mute=1" 
-      title="YouTube video player" 
-      frameborder="0" 
-      allow="autoplay; encrypted-media" 
-      allowfullscreen>
-    </iframe>
+    <div class="video-container">
+      <iframe width="500" height="315" 
+        src="https://www.youtube.com/embed/B1bNryZB188?autoplay=1" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="autoplay; encrypted-media" 
+        allowfullscreen>
+      </iframe>
+    </div>
   </div>
 </body>
 </html>
