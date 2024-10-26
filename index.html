@@ -16,7 +16,7 @@
       width: 90%;
       max-width: 500px;
       margin: auto;
-      background-color: #fff;
+      background-color: #f7f7f7;
       padding: 20px;
       border-radius: 8px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -55,54 +55,46 @@
     }
     .icon-container {
         position: fixed;
-        top: 20px; /* Đặt khoảng cách từ trên xuống */
-        right: 20px; /* Đặt khoảng cách từ bên phải */
+        top: 20px;
+        right: 20px;
         display: flex;
-        gap: 15px; /* Khoảng cách giữa các biểu tượng */
+        gap: 15px;
     }
-
     .icon img {
-        width: 30px; /* Kích thước biểu tượng */
+        width: 30px;
         height: 30px;
         cursor: pointer;
     }
     .phone-icon img {
-    animation: shake 0.5s infinite alternate;
+        animation: shake 0.5s infinite alternate;
     }
-
     .address-icon img {
-    animation: slow-shake 0.5s infinite alternate;
+        animation: slow-shake 0.5s infinite alternate;
     }
-
     @keyframes shake {
         0% { transform: translateY(0); }
         50% { transform: translateY(-5px); }
     }
-
     @keyframes slow-shake {
         0% { transform: translateY(0); }
         100% { transform: translateY(-5px); }
     }
-
-    .icon-container {
-        position: fixed;
-        top: 20px; /* Đặt khoảng cách từ trên xuống */
-        right: 20px; /* Đặt khoảng cách từ bên phải */
-        display: flex;
-        gap: 15px; /* Khoảng cách giữa các biểu tượng */
+    .combined-images {
+      display: flex; /* Display side-by-side */
+      flex-direction: column; /* Change to "row" for side-by-side */
+      /* gap: 10px; */
+      align-items: center;
+      margin-top: 20px;
     }
-
+    .combined-images img {
+      width: 100%;
+      border-radius: 8px;
+    }
   </style>
 </head>
 <body>
   <div class="container">
-    <!-- <h1 class="title">Graduate</h1> -->
     <img src="invitation.jpg" alt="Graduation Photo" class="image">
-    <!-- <p class="subtitle">Join me for a Graduation Ceremony</p>
-    <p class="date-time">November 01, 10:00 AM</p>
-    <p class="location">Ton Duc Thang University<br>19 Nguyen Huu Tho, Tan Phong Ward, District 7</p>
-    <p class="contact">📞 <span class="phone">0399665895</span></p> -->
-    <!-- <p class="location">Ton Duc Thang University<br>19 Nguyen Huu Tho, Tan Phong Ward, District 7</p> -->
     <div class="icon-container">
       <a href="https://maps.app.goo.gl/kcDQoRwQ7FjdKANm6" target="_blank" class="icon address-icon">
           <img src="location.png" alt="Bản đồ">
@@ -111,7 +103,11 @@
           <img src="phone-receiver-silhouette.png" alt="Gọi điện">
       </a>
     </div>
-    <img src="tdtu-map-2.gif" alt="Graduation Photo" class="image">
+    <!-- Combined Image Block -->
+    <div class="combined-images">
+      <img src="map-title.png" alt="Map Title">
+      <img src="tdtu-map-2.gif" alt="Graduation Photo">
+    </div>
   </div>
 </body>
 </html>
